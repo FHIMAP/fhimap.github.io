@@ -1,1 +1,232 @@
-This is FHIMAP (FAST HI Mapping of the Milky Way Plane)!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FHIMAP — FAST H I Mapping of the Milky Way Plane">
+  <title>FHIMAP — FAST H I Mapping of the Milky Way Plane</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">FHIMAP</a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav">
+      <a href="#survey">Survey</a>
+      <a href="#data">Data</a>
+      <a href="#status">Status</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#publications">Publications</a>
+      <a href="#team">Team</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">FAST H I Mapping of the Milky Way Plane</p>
+        <h1>FHIMAP</h1>
+        <p class="hero-lead">
+          Survey of Galactic atomic hydrogen with the Five-hundred-meter Aperture Spherical Radio Telescope (FAST).
+        </p>
+        <div class="metrics">
+          <div><strong>~3′</strong><span>angular resolution</span></div>
+          <div><strong>0.16</strong><span>km s<sup>−1</sup> velocity resolution</span></div>
+          <div><strong>~80</strong><span>mK target sensitivity</span></div>
+        </div>
+        <div>
+          <img src="output.webp" class="hero-image"
+            alt="Scanning pattern">
+        </div>
+        <a class="button button-light" href="#data">Data products ↓</a>
+      </div>
+    </section>
+
+    <section id="survey" class="section">
+      <div class="section-heading">
+        <p class="kicker">01 / SURVEY</p>
+        <h2>Mapping the Galactic neutral medium at fine scales.</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p class="lead">
+            <strong>FHIMAP (FAST H I Mapping of the Milky Way Plane)</strong> is a
+            large-scale survey of Galactic neutral hydrogen conducted with FAST.
+          </p>
+          <p>
+            FHIMAP aims to map the observable Galactic plane with approximately
+            3′ angular resolution, 0.16 km s<sup>−1</sup> velocity resolution,
+            and a target sensitivity of approximately 80 mK.
+          </p>
+          <p>
+            The survey combines a multi-beam on-the-fly observing strategy
+            optimized for Galactic coordinates with orthogonal coverage,
+            providing fine spatial and spectral sampling together with high
+            sensitivity and geometrically faithful imaging.
+          </p>
+          <p>
+            FHIMAP will provide a high-fidelity data set for investigating the
+            multiphase interstellar medium, interstellar gas flows, stellar
+            feedback, the atomic-to-molecular transition, and Galactic
+            structure.
+          </p>
+        </div>
+
+        <div class="spec-card">
+          <h3>Survey specifications</h3>
+          <dl>
+            <div><dt>Telescope</dt><dd>FAST</dd></div>
+            <div><dt>Tracer</dt><dd>H I 21-cm</dd></div>
+            <div><dt>Survey region</dt><dd>|b| ≤ 5°</dd></div>
+            <div><dt>Angular resolution</dt><dd>~3′</dd></div>
+            <div><dt>Velocity resolution</dt><dd>0.16 km s<sup>−1</sup></dd></div>
+            <div><dt>Target sensitivity</dt><dd>~80 mK</dd></div>
+            <div><dt>Observing mode</dt><dd>MultiBeam Galactic OTF</dd></div>
+            <div><dt>Sampling</dt><dd>Super-Nyquist</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="data" class="section section-alt">
+      <div class="section-heading">
+        <p class="kicker">02 / DATA ACCESS</p>
+        <h2>Data products for the community.</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card featured-card">
+          <span class="card-number">01</span>
+          <h3>H I spectral-line data</h3>
+          <p>
+            High-resolution Galactic H I data cubes, with survey coverage,
+            FITS metadata, calibration information, and release documentation.
+          </p>
+          <a class="text-link" id="PublicRelease" href="#hirelease">Public release →</a>
+        </article>
+        <article class="card">
+          <span class="card-number">02</span>
+          <h3>Additional products</h3>
+          <p>
+            Radio continuum, radio recombination-line, full-Stokes, and
+            piggyback pulsar-backend products will extend the scientific reach
+            of the survey.
+          </p>
+          <a class="text-link" href="#hirelease">Products →</a>
+        </article>
+        <article class="card">
+          <span class="card-number">03</span>
+          <h3>Documentation</h3>
+          <p>
+            Data format, coordinate conventions, calibration, known artifacts,
+            usage notes, and citation information.
+          </p>
+          <a class="text-link" href="#hirelease">Documentation →</a>
+        </article>
+      </div>
+      <p class="release-note">
+        <strong id="hirelease">Public release:</strong> Please check back for release information.
+      </p>
+    </section>
+
+    <section id="status" class="section">
+      <div class="section-heading">
+        <p class="kicker">03 / OBSERVATION STATUS</p>
+      </div>
+      <div class="status-layout">
+        <div class="coverage-placeholder">
+            <img src="observing_status.svg" alt="FHIMAP observing status">
+        </div>
+        <div class="status-text">
+          <!--
+          <div class="big-stat">XX%</div>
+          <p class="stat-label">of the planned survey area observed</p>
+          -->
+          <ul class="status-list">
+            <li><span>Observed</span><strong>170 deg²</strong></li>
+            <li><span>Processed</span><strong>170 deg²</strong></li>
+            <li><span>Public</span><strong>— deg²</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="showcase" class="section showcase">
+      <div class="section-heading">
+        <p class="kicker">04 / DATA SHOWCASE</p>
+      </div>
+      <div class="showcase-main image-placeholder">
+        <div>
+          <span>FHIMAP IMAGE</span>
+          <p></p>
+          <img src="moment-0.webp" width="70%"
+            alt="FHIMAP H I moment-0 map">
+        </div>
+      </div>
+      <p class="caption">
+        FHIMAP combines high angular resolution, fine velocity resolution,
+        high sensitivity, and dense spatial sampling to reveal multi-scale
+        structures in the Galactic neutral medium.
+      </p>
+      <div class="showcase-grid">
+        <div class="image-placeholder small"><span>Fine structure</span></div>
+        <div class="image-placeholder small"><span>High speed cloud</span></div>
+        <div class="image-placeholder small"><span>Supernova remnant</span></div>
+      </div>
+    </section>
+
+    <section id="publications" class="section section-alt">
+      <div class="section-heading">
+        <p class="kicker">05 / PUBLICATIONS</p>
+      </div>
+      <article class="publication">
+        <div class="pub-year">IN PREPARATION</div>
+        <div>
+          <h3>FAST H I Mapping of the Milky Way Plane (FHIMAP): project overview</h3>
+          <p>
+            Survey description, observing strategy, data characteristics,
+            validation, and first scientific demonstrations.
+          </p>
+          <div class="pub-links"><a href="#">ADS</a><a href="#">arXiv</a><a href="#">PDF</a></div>
+        </div>
+      </article>
+      <article class="publication muted">
+        <div class="pub-year">FUTURE</div>
+        <div>
+          <h3>FHIMAP science papers</h3>
+          <p>Science results based on FHIMAP data will be listed here.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="team" class="section">
+      <div class="section-heading">
+        <p class="kicker">06 / TEAM</p>
+        <h2>A collaboration across Chinese radio astronomy.</h2>
+      </div>
+      <div class="institution-grid">
+        <article><h3>Purple Mountain Observatory</h3><p>Nanjing, China</p><div class="names">Team members</div></article>
+        <article><h3>Xinjiang Astronomical Observatory</h3><p>Urumqi, China</p><div class="names">Team members</div></article>
+        <article><h3>Shanghai Astronomical Observatory</h3><p>Shanghai, China</p><div class="names">Team members</div></article>
+        <article><h3>Peking University</h3><p>Beijing, China</p><div class="names">Team members</div></article>
+        <article><h3>Nanjing University</h3><p>Nanjing, China</p><div class="names">Team members</div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>FHIMAP</strong>
+        <p>FAST H I Mapping of the Milky Way Plane</p>
+      </div>
+      <div class="footer-meta">
+        <p>FAST is operated by the National Astronomical Observatories, Chinese Academy of Sciences.</p>
+        <p>© FHIMAP Collaboration</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
